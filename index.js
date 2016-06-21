@@ -21,7 +21,7 @@ var KNOWN_STATICS = {
 
 var isGetOwnPropertySymbolsAvailable = typeof Object.getOwnPropertySymbols === 'function';
 
-module.exports = function hoistNonReactStatics(targetComponent, sourceComponent, customStatics) {
+function hoistNonReactStatics(targetComponent, sourceComponent, customStatics) {
     if (typeof sourceComponent !== 'string') { // don't hoist over string (html) components
         var keys = Object.getOwnPropertyNames(sourceComponent);
 
@@ -43,3 +43,6 @@ module.exports = function hoistNonReactStatics(targetComponent, sourceComponent,
 
     return targetComponent;
 };
+
+module.exports = hoistNonReactStatics;
+module.exports.default = hoistNonReactStatics;
