@@ -45,4 +45,3 @@ function hoistNonReactStatics(targetComponent, sourceComponent, customStatics) {
 };
 
 module.exports = hoistNonReactStatics;
-module.exports.default = hoistNonReactStatics;
