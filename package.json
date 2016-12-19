@@ -20,5 +20,6 @@
   "bugs": {
     "url": "https://github.com/trueadm/hoist-non-inferno-statics/issues"
   },
-  "homepage": "https://github.com/trueadm/hoist-non-inferno-statics"
+  "homepage": "https://github.com/trueadm/hoist-non-inferno-statics",
+  "typings": "index.d.ts"
 }
